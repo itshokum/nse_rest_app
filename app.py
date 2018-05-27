@@ -16,8 +16,8 @@ stock_list_dict = create_stock_list_dict()
 
 @app.route('/stock/<string:stock_symbol>')
 def get_stock_details(stock_symbol):	
-	stock_symbol = 'INFY'
-	print(stock_symbol.upper())
+	#stock_symbol = 'INFY'
+	#print(stock_symbol.upper())
 	if stock_symbol.upper() not in stock_list_dict:
 		message = "Stock with symbol {} not found".format(stock_symbol)
 		return jsonify({'message' : message})
