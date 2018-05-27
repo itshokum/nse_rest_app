@@ -42,5 +42,5 @@ def get_stock_details(stock_symbol):
 	#return jsonify({"message":"Stock with symbol {} not found".format(stock_symbol)})
 
 if __name__ == "__main__":
-	app.run(port=5000) 
+	app.run() 
 
